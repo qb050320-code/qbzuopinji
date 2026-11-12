@@ -99,7 +99,7 @@ function App() {
 
       <section id="work" className="work section-space">
         <div className="wrap"><SectionLabel number="02">SELECTED WORK / 精选项目</SectionLabel><div className="section-heading reveal"><h2>不同故事，<br /><span className="serif">同样专注。</span></h2><div className="section-description"><span className="mono">A SELECTION OF MY JOURNEY</span><p>从真实生活到银幕想象，<br />每一帧，都有它的表达。</p></div></div>
-          <div className="work-toolbar"><div className="filters" role="group" aria-label="按专业筛选作品">{['全部', '调色', '剪辑', '摄影', 'DIT'].map(filter => <button key={filter} onClick={() => setActiveFilter(filter)} className={activeFilter === filter ? 'filter active' : 'filter'} aria-pressed={activeFilter === filter}>{filter}{filter === '全部' && <sup>06</sup>}</button>)}</div><span className="work-count mono">{String(visibleProjects.length).padStart(2, '0')} PROJECTS</span></div>
+          <div className="work-toolbar"><div className="filters" role="group" aria-label="按专业筛选作品">{['全部', '调色', '剪辑', '摄影', 'DIT'].map(filter => <button key={filter} onClick={() => setActiveFilter(filter)} className={activeFilter === filter ? 'filter active' : 'filter'} aria-pressed={activeFilter === filter}>{filter}{filter === '全部' && <sup>{String(projects.length).padStart(2, '0')}</sup>}</button>)}</div><span className="work-count mono">{String(visibleProjects.length).padStart(2, '0')} PROJECTS</span></div>
           <div className="project-grid" aria-live="polite">{visibleProjects.map(project => <button className={`project-card${project.hasOriginalImages ? ' project-original' : ''}`} key={project.id} onClick={() => setModal({ type: 'project', project })} aria-label={`查看项目《${project.title}》详情`}>
             <div className="project-image">
               <img src={project.image} alt={project.imageAlt || `${project.title}的氛围示意封面，非项目原片`} loading="lazy" />
@@ -111,7 +111,7 @@ function App() {
             </div>
             <div className="project-info"><div><span className="project-type">{project.type} <i>/</i> {project.year}</span><h3>{project.title}</h3></div><span className="project-role">{project.categories.join(' / ')}</span></div>
           </button>)}</div>
-          <div className="work-note"><span className="status-dot" /><p>《人圈》已收录 24 张调色静帧与 4 张调色画面总览；其余项目封面为氛围示意素材。</p><a href={profile.channel} target="_blank" rel="noreferrer">前往视频号 <Arrow /></a></div>
+          <div className="work-note"><span className="status-dot" /><p>《人圈》《她不乖》及短剧调色测试已收录真实资料；带示意标记的封面待替换。</p><a href={profile.channel} target="_blank" rel="noreferrer">前往视频号 <Arrow /></a></div>
         </div>
       </section>
 
@@ -136,10 +136,12 @@ function App() {
           <h2 id="dialog-title">{modal.project.title}</h2>
           <div className="dialog-tags">{modal.project.type} / {modal.project.categories.join(' · ')}</div>
           <p>{modal.project.description}</p>
+          {modal.project.pdf && <a className="text-link" href={modal.project.pdf} target="_blank" rel="noreferrer">查看 / 下载原始调色测试 PDF <Arrow /></a>}
+          {modal.project.pdfs && <div className="pdf-downloads"><h3>原始调色测试资料</h3>{modal.project.pdfs.map(pdf => <a className="text-link" key={pdf.url} href={pdf.url} target="_blank" rel="noreferrer">{pdf.title} <Arrow /></a>)}</div>}
           <h3>我在项目中的工作</h3>
           <ul>{modal.project.contributions.map(item => <li key={item}>{item}</li>)}</ul>
           <p className="dialog-note">{modal.project.note}</p>
-          <div className="material-note">{modal.project.hasOriginalImages ? '本项目展示 24 张真实调色静帧与 4 张调色画面总览，保留原始画幅与色彩。' : '封面为氛围示意素材，非项目原片。项目影像待补充，可联系我了解更多。'}</div>
+          <div className="material-note">{modal.project.hasOriginalImages ? `本项目收录 ${modal.project.gallery.length} 张调色影像与项目资料，保留原始画幅与色彩。` : '封面为氛围示意素材，非项目原片。项目影像待补充，可联系我了解更多。'}</div>
           <a className="dialog-cta" href={`mailto:${profile.email}?subject=${encodeURIComponent(`项目交流｜${modal.project.title}`)}`}>聊聊这个项目 <Arrow /></a>
         </div>
       </> : <div className="dialog-content social-dialog"><span className="mono">FIND ME ON DOUYIN</span><h2 id="dialog-title">更多日常影像</h2><p>打开抖音，搜索我的账号：</p><strong className="douyin-id">QPhotographer</strong><p className="muted-copy">记录创作，也记录生活。</p></div>}

@@ -46,3 +46,5 @@
   .project-original .project-visual-label,
   .project-original .project-number { padding: 4px 6px; }
 }
+
+.pdf-downloads{display:flex;flex-direction:column;align-items:flex-start;gap:12px}.pdf-downloads .text-link{margin-top:0;max-width:100%;font-size:12px}
