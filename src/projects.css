@@ -1,0 +1,48 @@
+/* Real grading stills are presented without filters, tint overlays or crops. */
+.project-card.project-original .project-image {
+  background: #080907;
+}
+.project-card.project-original .project-image > img,
+.project-card.project-original:hover .project-image > img,
+.project-card.project-original:focus-visible .project-image > img {
+  object-fit: contain;
+  filter: none;
+  transform: none;
+}
+.project-original .project-image-overlay,
+.project-original .project-image-title {
+  display: none;
+}
+.project-original .project-visual-label,
+.project-original .project-number {
+  padding: 6px 8px;
+  background: rgba(9, 10, 9, .72);
+  color: #d8d7cc;
+}
+.project-original .project-open {
+  background: rgba(9, 10, 9, .65);
+}
+.project-dialog.has-gallery {
+  --accent: #dfd8c4;
+  max-width: 1220px;
+  width: calc(100% - 48px);
+  background: #11120f;
+  border-color: #3a3b32;
+}
+.has-gallery .dialog-content {
+  border-top: 1px solid rgba(228, 223, 207, .13);
+}
+.has-gallery .gallery-stage { max-height: 60svh; }
+.dialog-toolbar {
+  position: sticky;
+  top: 0;
+  height: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+.dialog-toolbar .dialog-close { pointer-events: auto; }
+@media (max-width: 650px) {
+  .project-dialog.has-gallery { width: calc(100% - 20px); }
+  .project-original .project-visual-label,
+  .project-original .project-number { padding: 4px 6px; }
+}

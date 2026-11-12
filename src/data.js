@@ -11,14 +11,25 @@ export const projects = [
     categories: ['调色', 'DIT'], image: '/media/project-01.webp',
     description: '从片场的数据管理到后期色彩，参与构建影片的整体视觉表达。依据导演的创作意图，完成基础矫正与艺术化风格处理。',
     contributions: ['片场素材备份、校验、转码与管理', '前后期素材交接与音频时码问题排查', '基础调色、镜头匹配与整体风格统一'],
-    note: '入围第 20 届 FIRST 青年电影展产业放映（据个人简历）。',
+    note: '入围第 20 届 FIRST 青年电影展产业放映',
   },
   {
     id: '02', title: '人圈', english: 'WITHIN THE FRAME', type: '院线电影 · 纪录片', year: '持续参与',
-    categories: ['调色', 'DIT'], image: '/media/project-02.webp',
+    categories: ['调色', 'DIT'], image: '/media/renquan/frame-13.webp',
+    hasOriginalImages: true,
+    imageAlt: '《人圈》调色静帧：老人站在村落的石墙巷道中',
+    gallery: Array.from({ length: 28 }, (_, index) => {
+      const number = String(index + 1).padStart(2, '0');
+      return {
+        src: `/media/renquan/frame-${number}.webp`,
+        thumb: `/media/renquan/thumb-${number}.webp`,
+        kind: index >= 24 ? 'overview' : 'still',
+        alt: index >= 24 ? `《人圈》调色画面总览 ${index - 23}` : `《人圈》调色静帧 ${index + 1}`,
+      };
+    }),
     description: '以严肃、庄重、真实的视觉基调服务影片叙事，完成色彩基础矫正与风格化处理，并统筹前后期素材衔接。',
     contributions: ['前后期素材交接与回批整理', 'Final Cut Pro 与 DaVinci Resolve 套底问题处理', '基础色彩矫正与影片风格化处理'],
-    note: '影片已取得公映许可证（据个人简历）。',
+    note: '影片已取得公映许可证。',
   },
   {
     id: '03', title: '一炉一器', english: 'CRAFTED IN FIRE', type: '纪录片', year: '2025—2026',
@@ -32,14 +43,14 @@ export const projects = [
     categories: ['摄影'], image: '/media/project-04.webp',
     description: '以轻量化拍摄方式接近人物与现场，参与纪录片前期策划、整体统筹与影像创作。用镜头观察生活，也留下生活本身的呼吸。',
     contributions: ['项目前期策划与影像创作', '拍摄方案与轻量化设备搭配', '纪录片摄影与现场统筹'],
-    note: '入围第三届 IM 两岸青年影展、北京国际大学生电影节（据个人简历）。',
+    note: '入围第三届 IM 两岸青年影展、北京国际大学生电影节。',
   },
   {
     id: '05', title: '她不乖 · 短剧调色', english: 'COLOR FOR THE STORY', type: '网络短剧', year: '2025',
     categories: ['调色'], image: '/media/project-05.webp',
     description: '根据剧情氛围与导演意图，完成竖屏短剧的基础矫正、镜头匹配与整体风格统一，在紧凑的交付节奏中保持画面品质。',
     contributions: ['人物肤色与曝光矫正', '跨场景镜头匹配', '根据剧情氛围塑造视觉风格'],
-    note: '《她不乖》红果平台热度 6000 万，预约追剧 60 万人（简历记录，非实时数据）。',
+    note: '《她不乖》红果平台热度 6000 万，预约追剧 60 万人。',
   },
   {
     id: '06', title: '鸭司令的征程', english: 'A JOURNEY BACK HOME', type: '纪录片', year: '2025',

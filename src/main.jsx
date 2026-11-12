@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { profile, projects, experiences } from './data';
+import ProjectGallery from './ProjectGallery';
 import './styles.css';
+import './hero.css';
+import './projects.css';
 
 function Arrow({ diagonal = true, ...props }) {
   return <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}><path d={diagonal ? 'M5 19 19 5M5 5h14v14' : 'M4 12h16m-6-6 6 6-6 6'} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>;
@@ -15,9 +18,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [modal, setModal] = useState(null);
   const [toast, setToast] = useState('');
-  const [playing, setPlaying] = useState(false);
   const [comparison, setComparison] = useState(52);
-  const videoRef = useRef(null);
   const dialogRef = useRef(null);
   const lastFocus = useRef(null);
 
@@ -30,8 +31,6 @@ function App() {
       entries.forEach(entry => { if (entry.isIntersecting) setActiveSection(entry.target.id); });
     }, { rootMargin: '-20% 0px -65% 0px' });
     document.querySelectorAll('main > section[id]').forEach(el => sections.observe(el));
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (!reduce.matches) videoRef.current?.play().catch(() => {});
     return () => { observer.disconnect(); sections.disconnect(); };
   }, []);
 
@@ -59,18 +58,12 @@ function App() {
     try { await navigator.clipboard.writeText(profile.email); setToast('邮箱已复制，期待你的来信。'); }
     catch { setToast(`请手动复制邮箱：${profile.email}`); }
   }
-  function toggleVideo() {
-    const video = videoRef.current;
-    if (!video) return;
-    if (video.paused) video.play().catch(() => setToast('暂时无法播放视频，请稍后重试。'));
-    else video.pause();
-  }
   function navigate() { setMenuOpen(false); }
   const visibleProjects = projects.filter(project => activeFilter === '全部' || project.categories.includes(activeFilter));
 
   return <>
     <a className="skip-link" href="#about">跳转到主要内容</a>
-    <header className={`header ${activeSection !== 'home' ? 'header-solid' : ''}`}>
+    <header className={`header ${activeSection !== 'home' ? 'header-solid' : 'header-studio'}`}>
       <div className="header-inner wrap">
         <a href="#home" className="brand" aria-label="齐兵，返回首页" onClick={navigate}><Mark /><span className="brand-name">QI BING<span>齐兵 · 影像创作者</span></span></a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-controls="main-nav" aria-label={menuOpen ? '关闭导航' : '打开导航'}>{menuOpen ? '关闭 −' : '菜单 +'}</button>
@@ -82,15 +75,14 @@ function App() {
     </header>
 
     <main>
-      <section className="hero" id="home" aria-label="齐兵个人作品集首页">
-        <div className="hero-media"><video ref={videoRef} poster="/media/hero-poster.webp" muted loop playsInline preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} aria-label="电影感氛围背景视频"><source src="/media/hero.mp4" type="video/mp4" /><source src="/media/hero-fallback.webm" type="video/webm" /></video><div className="hero-shade" /></div>
-        <div className="hero-frame"><span /><span /><span /><span /></div>
+      <section className="hero hero-studio" id="home" aria-label="齐兵个人作品集首页">
+        <div className="hero-media"><img className="hero-photo" src="/media/hero-colorist.webp" alt="齐兵在工作室操作调色控制台，通过双屏进行画面调色" fetchPriority="high" /><div className="hero-shade" /></div>
         <div className="hero-content wrap">
           <div className="hero-eyebrow"><span className="status-dot" /> INDEPENDENT VISUAL CREATOR <span className="hero-year">PORTFOLIO / 2026</span></div>
           <h1>让影像<span className="hero-line">有<span className="outline-word">情绪</span><i className="title-period">.</i></span></h1>
           <div className="hero-bottom-copy"><p>从片场到银幕，以色彩塑造情绪，<br />用镜头与节奏，让每个故事被看见。</p><a className="round-link" href="#work"><span>探索我的作品<small>EXPLORE SELECTED WORK</small></span><span className="circle-arrow"><Arrow /></span></a></div>
         </div>
-        <div className="hero-footer wrap"><div className="hero-disciplines">COLORIST <i>/</i> EDITOR <i>/</i> CINEMATOGRAPHER <i>/</i> DIT</div><div className="hero-video-controls"><span>氛围影像 · 示意素材</span><button onClick={toggleVideo} aria-label={playing ? '暂停背景视频' : '播放背景视频'} className="video-toggle">{playing ? <span className="pause-icon" /> : <span className="play-icon" />}</button></div><a href="#about" className="scroll-link">SCROLL TO DISCOVER <span>↓</span></a></div>
+        <div className="hero-footer wrap"><div className="hero-disciplines">COLORIST <i>/</i> EDITOR <i>/</i> CINEMATOGRAPHER <i>/</i> DIT</div><div className="hero-photo-credit"><span>INSIDE THE COLOR ROOM</span><span>齐兵 · 调色工作现场</span></div><a href="#about" className="scroll-link">SCROLL TO DISCOVER <span>↓</span></a></div>
       </section>
 
       <div className="discipline-strip" aria-hidden="true"><div className="wrap"><span>视觉调色</span><i>✳</i><span>叙事剪辑</span><i>✳</i><span>影像创作</span><i>✳</i><span>片场数据管理</span><i>✳</i><span>FROM VISION TO EMOTION</span></div></div>
@@ -108,8 +100,18 @@ function App() {
       <section id="work" className="work section-space">
         <div className="wrap"><SectionLabel number="02">SELECTED WORK / 精选项目</SectionLabel><div className="section-heading reveal"><h2>不同故事，<br /><span className="serif">同样专注。</span></h2><div className="section-description"><span className="mono">A SELECTION OF MY JOURNEY</span><p>从真实生活到银幕想象，<br />每一帧，都有它的表达。</p></div></div>
           <div className="work-toolbar"><div className="filters" role="group" aria-label="按专业筛选作品">{['全部', '调色', '剪辑', '摄影', 'DIT'].map(filter => <button key={filter} onClick={() => setActiveFilter(filter)} className={activeFilter === filter ? 'filter active' : 'filter'} aria-pressed={activeFilter === filter}>{filter}{filter === '全部' && <sup>06</sup>}</button>)}</div><span className="work-count mono">{String(visibleProjects.length).padStart(2, '0')} PROJECTS</span></div>
-          <div className="project-grid" aria-live="polite">{visibleProjects.map(project => <button className="project-card" key={project.id} onClick={() => setModal({ type: 'project', project })} aria-label={`查看项目《${project.title}》详情`}><div className="project-image"><img src={project.image} alt={`${project.title}的氛围示意封面，非项目原片`} loading="lazy" /><div className="project-image-overlay" /><span className="project-number mono">P / {project.id}</span><span className="project-visual-label">VISUAL STUDY / 示意封面</span><span className="project-open"><Arrow /></span><div className="project-image-title"><span>{project.english}</span></div></div><div className="project-info"><div><span className="project-type">{project.type} <i>/</i> {project.year}</span><h3>{project.title}</h3></div><span className="project-role">{project.categories.join(' / ')}</span></div></button>)}</div>
-          <div className="work-note"><span className="status-dot" /><p>项目经历来自个人简历；当前封面为氛围示意素材，非项目原片。完整影像将陆续更新。</p><a href={profile.channel} target="_blank" rel="noreferrer">前往视频号 <Arrow /></a></div>
+          <div className="project-grid" aria-live="polite">{visibleProjects.map(project => <button className={`project-card${project.hasOriginalImages ? ' project-original' : ''}`} key={project.id} onClick={() => setModal({ type: 'project', project })} aria-label={`查看项目《${project.title}》详情`}>
+            <div className="project-image">
+              <img src={project.image} alt={project.imageAlt || `${project.title}的氛围示意封面，非项目原片`} loading="lazy" />
+              <div className="project-image-overlay" />
+              <span className="project-number mono">P / {project.id}</span>
+              <span className="project-visual-label">{project.hasOriginalImages ? 'COLOR GRADING / 调色影像' : 'VISUAL STUDY / 示意封面'}</span>
+              <span className="project-open"><Arrow /></span>
+              <div className="project-image-title"><span>{project.english}</span></div>
+            </div>
+            <div className="project-info"><div><span className="project-type">{project.type} <i>/</i> {project.year}</span><h3>{project.title}</h3></div><span className="project-role">{project.categories.join(' / ')}</span></div>
+          </button>)}</div>
+          <div className="work-note"><span className="status-dot" /><p>《人圈》已收录 24 张调色静帧与 4 张调色画面总览；其余项目封面为氛围示意素材。</p><a href={profile.channel} target="_blank" rel="noreferrer">前往视频号 <Arrow /></a></div>
         </div>
       </section>
 
@@ -125,7 +127,23 @@ function App() {
     </main>
 
     <div className={`toast ${toast ? 'toast-visible' : ''}`} role="status">{toast}</div>
-    {modal && <dialog ref={dialogRef} className="project-dialog" onCancel={e => { e.preventDefault(); setModal(null); }} onClick={e => { if (e.target === e.currentTarget) setModal(null); }} aria-labelledby="dialog-title"><button className="dialog-close" aria-label="关闭弹窗" onClick={() => setModal(null)}>关闭 <span>×</span></button>{modal.type === 'project' ? <><img className="dialog-image" src={modal.project.image} alt="项目氛围示意封面，非项目原片" /><div className="dialog-content"><span className="mono dialog-eyebrow">PROJECT / {modal.project.id} · {modal.project.year}</span><h2 id="dialog-title">{modal.project.title}</h2><div className="dialog-tags">{modal.project.type} / {modal.project.categories.join(' · ')}</div><p>{modal.project.description}</p><h3>我在项目中的工作</h3><ul>{modal.project.contributions.map(item => <li key={item}>{item}</li>)}</ul><p className="dialog-note">{modal.project.note}</p><div className="material-note">封面为氛围示意素材，非项目原片。项目影像待补充，可联系我了解更多。</div><a className="dialog-cta" href={`mailto:${profile.email}?subject=${encodeURIComponent(`项目交流｜${modal.project.title}`)}`}>聊聊这个项目 <Arrow /></a></div></> : <div className="dialog-content social-dialog"><span className="mono">FIND ME ON DOUYIN</span><h2 id="dialog-title">更多日常影像</h2><p>打开抖音，搜索我的账号：</p><strong className="douyin-id">QPhotographer</strong><p className="muted-copy">记录创作，也记录生活。</p></div>}</dialog>}
+    {modal && <dialog ref={dialogRef} className={`project-dialog${modal.project?.gallery?.length ? ' has-gallery' : ''}`} onCancel={e => { e.preventDefault(); setModal(null); }} onClick={e => { if (e.target === e.currentTarget) setModal(null); }} aria-labelledby="dialog-title">
+      <div className="dialog-toolbar"><button className="dialog-close" aria-label="关闭弹窗" onClick={() => setModal(null)}>关闭 <span>×</span></button></div>
+      {modal.type === 'project' ? <>
+        {modal.project.gallery?.length ? <ProjectGallery key={modal.project.id} images={modal.project.gallery} title={modal.project.title} /> : <img className="dialog-image" src={modal.project.image} alt="项目氛围示意封面，非项目原片" />}
+        <div className="dialog-content">
+          <span className="mono dialog-eyebrow">PROJECT / {modal.project.id} · {modal.project.year}</span>
+          <h2 id="dialog-title">{modal.project.title}</h2>
+          <div className="dialog-tags">{modal.project.type} / {modal.project.categories.join(' · ')}</div>
+          <p>{modal.project.description}</p>
+          <h3>我在项目中的工作</h3>
+          <ul>{modal.project.contributions.map(item => <li key={item}>{item}</li>)}</ul>
+          <p className="dialog-note">{modal.project.note}</p>
+          <div className="material-note">{modal.project.hasOriginalImages ? '本项目展示 24 张真实调色静帧与 4 张调色画面总览，保留原始画幅与色彩。' : '封面为氛围示意素材，非项目原片。项目影像待补充，可联系我了解更多。'}</div>
+          <a className="dialog-cta" href={`mailto:${profile.email}?subject=${encodeURIComponent(`项目交流｜${modal.project.title}`)}`}>聊聊这个项目 <Arrow /></a>
+        </div>
+      </> : <div className="dialog-content social-dialog"><span className="mono">FIND ME ON DOUYIN</span><h2 id="dialog-title">更多日常影像</h2><p>打开抖音，搜索我的账号：</p><strong className="douyin-id">QPhotographer</strong><p className="muted-copy">记录创作，也记录生活。</p></div>}
+    </dialog>}
   </>;
 }
 
