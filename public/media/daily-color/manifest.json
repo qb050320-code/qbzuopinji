@@ -1,0 +1,457 @@
+[
+  {
+    "src": "/media/daily-color/frame-01.webp",
+    "thumb": "/media/daily-color/thumb-01.webp",
+    "kind": "still",
+    "alt": "日常调色练习 1",
+    "originalFilename": "微信图片_20261112095225_451_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-02.webp",
+    "thumb": "/media/daily-color/thumb-02.webp",
+    "kind": "still",
+    "alt": "日常调色练习 2",
+    "originalFilename": "微信图片_20261112095225_452_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-03.webp",
+    "thumb": "/media/daily-color/thumb-03.webp",
+    "kind": "still",
+    "alt": "日常调色练习 3",
+    "originalFilename": "微信图片_20261112095225_453_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-04.webp",
+    "thumb": "/media/daily-color/thumb-04.webp",
+    "kind": "still",
+    "alt": "日常调色练习 4",
+    "originalFilename": "微信图片_20261112095225_454_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-05.webp",
+    "thumb": "/media/daily-color/thumb-05.webp",
+    "kind": "still",
+    "alt": "日常调色练习 5",
+    "originalFilename": "微信图片_20261112095225_455_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-06.webp",
+    "thumb": "/media/daily-color/thumb-06.webp",
+    "kind": "still",
+    "alt": "日常调色练习 6",
+    "originalFilename": "微信图片_20261112095225_456_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-07.webp",
+    "thumb": "/media/daily-color/thumb-07.webp",
+    "kind": "still",
+    "alt": "日常调色练习 7",
+    "originalFilename": "微信图片_20261112095225_457_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-08.webp",
+    "thumb": "/media/daily-color/thumb-08.webp",
+    "kind": "still",
+    "alt": "日常调色练习 8",
+    "originalFilename": "微信图片_20261112095225_458_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-09.webp",
+    "thumb": "/media/daily-color/thumb-09.webp",
+    "kind": "still",
+    "alt": "日常调色练习 9",
+    "originalFilename": "微信图片_20261112095225_459_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-10.webp",
+    "thumb": "/media/daily-color/thumb-10.webp",
+    "kind": "still",
+    "alt": "日常调色练习 10",
+    "originalFilename": "微信图片_20261112095225_460_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-11.webp",
+    "thumb": "/media/daily-color/thumb-11.webp",
+    "kind": "still",
+    "alt": "日常调色练习 11",
+    "originalFilename": "微信图片_20261112095225_461_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-12.webp",
+    "thumb": "/media/daily-color/thumb-12.webp",
+    "kind": "still",
+    "alt": "日常调色练习 12",
+    "originalFilename": "微信图片_20261112095225_462_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-13.webp",
+    "thumb": "/media/daily-color/thumb-13.webp",
+    "kind": "still",
+    "alt": "日常调色练习 13",
+    "originalFilename": "微信图片_20261112095225_463_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-14.webp",
+    "thumb": "/media/daily-color/thumb-14.webp",
+    "kind": "still",
+    "alt": "日常调色练习 14",
+    "originalFilename": "微信图片_20261112095225_464_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-15.webp",
+    "thumb": "/media/daily-color/thumb-15.webp",
+    "kind": "still",
+    "alt": "日常调色练习 15",
+    "originalFilename": "微信图片_20261112095225_465_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-16.webp",
+    "thumb": "/media/daily-color/thumb-16.webp",
+    "kind": "still",
+    "alt": "日常调色练习 16",
+    "originalFilename": "微信图片_20261112095225_466_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-17.webp",
+    "thumb": "/media/daily-color/thumb-17.webp",
+    "kind": "still",
+    "alt": "日常调色练习 17",
+    "originalFilename": "微信图片_20261112095225_467_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-18.webp",
+    "thumb": "/media/daily-color/thumb-18.webp",
+    "kind": "still",
+    "alt": "日常调色练习 18",
+    "originalFilename": "微信图片_20261112095225_468_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-19.webp",
+    "thumb": "/media/daily-color/thumb-19.webp",
+    "kind": "still",
+    "alt": "日常调色练习 19",
+    "originalFilename": "微信图片_20261112095225_469_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-20.webp",
+    "thumb": "/media/daily-color/thumb-20.webp",
+    "kind": "still",
+    "alt": "日常调色练习 20",
+    "originalFilename": "微信图片_20261112095225_470_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-21.webp",
+    "thumb": "/media/daily-color/thumb-21.webp",
+    "kind": "still",
+    "alt": "日常调色练习 21",
+    "originalFilename": "微信图片_20261112095225_471_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-22.webp",
+    "thumb": "/media/daily-color/thumb-22.webp",
+    "kind": "overview",
+    "alt": "日常调色练习 22",
+    "originalFilename": "微信图片_20261112095225_472_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-23.webp",
+    "thumb": "/media/daily-color/thumb-23.webp",
+    "kind": "overview",
+    "alt": "日常调色练习 23",
+    "originalFilename": "微信图片_20261112095225_473_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-24.webp",
+    "thumb": "/media/daily-color/thumb-24.webp",
+    "kind": "overview",
+    "alt": "日常调色练习 24",
+    "originalFilename": "微信图片_20261112095225_474_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-25.webp",
+    "thumb": "/media/daily-color/thumb-25.webp",
+    "kind": "still",
+    "alt": "日常调色练习 25",
+    "originalFilename": "微信图片_20261112095225_475_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-26.webp",
+    "thumb": "/media/daily-color/thumb-26.webp",
+    "kind": "still",
+    "alt": "日常调色练习 26",
+    "originalFilename": "微信图片_20261112095225_476_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-27.webp",
+    "thumb": "/media/daily-color/thumb-27.webp",
+    "kind": "still",
+    "alt": "日常调色练习 27",
+    "originalFilename": "微信图片_20261112095225_477_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-28.webp",
+    "thumb": "/media/daily-color/thumb-28.webp",
+    "kind": "still",
+    "alt": "日常调色练习 28",
+    "originalFilename": "微信图片_20261112095225_478_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-29.webp",
+    "thumb": "/media/daily-color/thumb-29.webp",
+    "kind": "still",
+    "alt": "日常调色练习 29",
+    "originalFilename": "微信图片_20261112095225_479_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-30.webp",
+    "thumb": "/media/daily-color/thumb-30.webp",
+    "kind": "still",
+    "alt": "日常调色练习 30",
+    "originalFilename": "微信图片_20261112095225_480_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-31.webp",
+    "thumb": "/media/daily-color/thumb-31.webp",
+    "kind": "still",
+    "alt": "日常调色练习 31",
+    "originalFilename": "微信图片_20261112095225_481_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-32.webp",
+    "thumb": "/media/daily-color/thumb-32.webp",
+    "kind": "still",
+    "alt": "日常调色练习 32",
+    "originalFilename": "微信图片_20261112095225_482_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-33.webp",
+    "thumb": "/media/daily-color/thumb-33.webp",
+    "kind": "still",
+    "alt": "日常调色练习 33",
+    "originalFilename": "微信图片_20261112095225_483_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-34.webp",
+    "thumb": "/media/daily-color/thumb-34.webp",
+    "kind": "still",
+    "alt": "日常调色练习 34",
+    "originalFilename": "微信图片_20261112095225_484_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-35.webp",
+    "thumb": "/media/daily-color/thumb-35.webp",
+    "kind": "still",
+    "alt": "日常调色练习 35",
+    "originalFilename": "微信图片_20261112095225_485_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-36.webp",
+    "thumb": "/media/daily-color/thumb-36.webp",
+    "kind": "still",
+    "alt": "日常调色练习 36",
+    "originalFilename": "微信图片_20261112095225_486_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-37.webp",
+    "thumb": "/media/daily-color/thumb-37.webp",
+    "kind": "overview",
+    "alt": "日常调色练习 37",
+    "originalFilename": "微信图片_20261112095225_503_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-38.webp",
+    "thumb": "/media/daily-color/thumb-38.webp",
+    "kind": "still",
+    "alt": "日常调色练习 38",
+    "originalFilename": "微信图片_20261112095225_504_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-39.webp",
+    "thumb": "/media/daily-color/thumb-39.webp",
+    "kind": "still",
+    "alt": "日常调色练习 39",
+    "originalFilename": "微信图片_20261112095225_505_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-40.webp",
+    "thumb": "/media/daily-color/thumb-40.webp",
+    "kind": "still",
+    "alt": "日常调色练习 40",
+    "originalFilename": "微信图片_20261112095225_506_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-41.webp",
+    "thumb": "/media/daily-color/thumb-41.webp",
+    "kind": "still",
+    "alt": "日常调色练习 41",
+    "originalFilename": "微信图片_20261112095225_507_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-42.webp",
+    "thumb": "/media/daily-color/thumb-42.webp",
+    "kind": "still",
+    "alt": "日常调色练习 42",
+    "originalFilename": "微信图片_20261112095225_508_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-43.webp",
+    "thumb": "/media/daily-color/thumb-43.webp",
+    "kind": "still",
+    "alt": "日常调色练习 43",
+    "originalFilename": "微信图片_20261112095225_509_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-44.webp",
+    "thumb": "/media/daily-color/thumb-44.webp",
+    "kind": "still",
+    "alt": "日常调色练习 44",
+    "originalFilename": "微信图片_20261112095225_510_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-45.webp",
+    "thumb": "/media/daily-color/thumb-45.webp",
+    "kind": "still",
+    "alt": "日常调色练习 45",
+    "originalFilename": "微信图片_20261112095225_511_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-46.webp",
+    "thumb": "/media/daily-color/thumb-46.webp",
+    "kind": "still",
+    "alt": "日常调色练习 46",
+    "originalFilename": "微信图片_20261112095225_512_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-47.webp",
+    "thumb": "/media/daily-color/thumb-47.webp",
+    "kind": "still",
+    "alt": "日常调色练习 47",
+    "originalFilename": "微信图片_20261112095225_513_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-48.webp",
+    "thumb": "/media/daily-color/thumb-48.webp",
+    "kind": "still",
+    "alt": "日常调色练习 48",
+    "originalFilename": "微信图片_20261112095225_514_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-49.webp",
+    "thumb": "/media/daily-color/thumb-49.webp",
+    "kind": "still",
+    "alt": "日常调色练习 49",
+    "originalFilename": "微信图片_20261112095225_515_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-50.webp",
+    "thumb": "/media/daily-color/thumb-50.webp",
+    "kind": "still",
+    "alt": "日常调色练习 50",
+    "originalFilename": "微信图片_20261112095225_516_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-51.webp",
+    "thumb": "/media/daily-color/thumb-51.webp",
+    "kind": "still",
+    "alt": "日常调色练习 51",
+    "originalFilename": "微信图片_20261112095225_517_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-52.webp",
+    "thumb": "/media/daily-color/thumb-52.webp",
+    "kind": "still",
+    "alt": "日常调色练习 52",
+    "originalFilename": "微信图片_20261112095225_518_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-53.webp",
+    "thumb": "/media/daily-color/thumb-53.webp",
+    "kind": "still",
+    "alt": "日常调色练习 53",
+    "originalFilename": "微信图片_20261112095225_519_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-54.webp",
+    "thumb": "/media/daily-color/thumb-54.webp",
+    "kind": "still",
+    "alt": "日常调色练习 54",
+    "originalFilename": "微信图片_20261112095225_520_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-55.webp",
+    "thumb": "/media/daily-color/thumb-55.webp",
+    "kind": "still",
+    "alt": "日常调色练习 55",
+    "originalFilename": "微信图片_20261112095225_521_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-56.webp",
+    "thumb": "/media/daily-color/thumb-56.webp",
+    "kind": "still",
+    "alt": "日常调色练习 56",
+    "originalFilename": "微信图片_20261112095225_522_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-57.webp",
+    "thumb": "/media/daily-color/thumb-57.webp",
+    "kind": "still",
+    "alt": "日常调色练习 57",
+    "originalFilename": "微信图片_20261112095225_523_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-58.webp",
+    "thumb": "/media/daily-color/thumb-58.webp",
+    "kind": "still",
+    "alt": "日常调色练习 58",
+    "originalFilename": "微信图片_20261112095225_524_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-59.webp",
+    "thumb": "/media/daily-color/thumb-59.webp",
+    "kind": "still",
+    "alt": "日常调色练习 59",
+    "originalFilename": "微信图片_20261112095225_525_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-60.webp",
+    "thumb": "/media/daily-color/thumb-60.webp",
+    "kind": "still",
+    "alt": "日常调色练习 60",
+    "originalFilename": "微信图片_20261112095225_526_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-61.webp",
+    "thumb": "/media/daily-color/thumb-61.webp",
+    "kind": "still",
+    "alt": "日常调色练习 61",
+    "originalFilename": "微信图片_20261112095225_536_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-62.webp",
+    "thumb": "/media/daily-color/thumb-62.webp",
+    "kind": "still",
+    "alt": "日常调色练习 62",
+    "originalFilename": "微信图片_20261112095225_537_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-63.webp",
+    "thumb": "/media/daily-color/thumb-63.webp",
+    "kind": "still",
+    "alt": "日常调色练习 63",
+    "originalFilename": "微信图片_20261112095225_538_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-64.webp",
+    "thumb": "/media/daily-color/thumb-64.webp",
+    "kind": "still",
+    "alt": "日常调色练习 64",
+    "originalFilename": "微信图片_20261112095225_539_26.jpg"
+  },
+  {
+    "src": "/media/daily-color/frame-65.webp",
+    "thumb": "/media/daily-color/thumb-65.webp",
+    "kind": "still",
+    "alt": "日常调色练习 65",
+    "originalFilename": "微信图片_20261112095225_540_26.jpg"
+  }
+]

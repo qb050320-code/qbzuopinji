@@ -1,0 +1,96 @@
+{
+  "project": {
+    "id": "11",
+    "title": "K线成长记",
+    "english": "K-LINE GROWTH",
+    "type": "网剧",
+    "year": "2025.07 — 2025.09",
+    "categories": [
+      "调色"
+    ],
+    "image": "/media/k-line/frame-07.webp",
+    "hasOriginalImages": true,
+    "imageAlt": "《K线成长记》夜景双人调色静帧",
+    "gallery": [
+      {
+        "src": "/media/k-line/frame-01.webp",
+        "thumb": "/media/k-line/thumb-01.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 1"
+      },
+      {
+        "src": "/media/k-line/frame-02.webp",
+        "thumb": "/media/k-line/thumb-02.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 2"
+      },
+      {
+        "src": "/media/k-line/frame-03.webp",
+        "thumb": "/media/k-line/thumb-03.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 3"
+      },
+      {
+        "src": "/media/k-line/frame-04.webp",
+        "thumb": "/media/k-line/thumb-04.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 4"
+      },
+      {
+        "src": "/media/k-line/frame-05.webp",
+        "thumb": "/media/k-line/thumb-05.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 5"
+      },
+      {
+        "src": "/media/k-line/frame-06.webp",
+        "thumb": "/media/k-line/thumb-06.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 6"
+      },
+      {
+        "src": "/media/k-line/frame-07.webp",
+        "thumb": "/media/k-line/thumb-07.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 7"
+      },
+      {
+        "src": "/media/k-line/frame-08.webp",
+        "thumb": "/media/k-line/thumb-08.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 8"
+      },
+      {
+        "src": "/media/k-line/frame-09.webp",
+        "thumb": "/media/k-line/thumb-09.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 9"
+      },
+      {
+        "src": "/media/k-line/frame-10.webp",
+        "thumb": "/media/k-line/thumb-10.webp",
+        "kind": "still",
+        "alt": "《K线成长记》调色静帧 10"
+      }
+    ],
+    "description": "根据导演要求确定影片风格，完成画面色彩的矫正与风格化处理。",
+    "contributions": [
+      "根据导演要求确定影片视觉风格",
+      "完成画面色彩矫正与风格化处理"
+    ],
+    "note": "网剧 · 调色"
+  },
+  "source": "C:\\Users\\Lenovo\\Desktop\\调色作品集\\k线成长记",
+  "files": [
+    "微信图片_20261112105732_563_26.jpg",
+    "微信图片_20261112105732_564_26.jpg",
+    "微信图片_20261112105732_565_26.jpg",
+    "微信图片_20261112105732_566_26.jpg",
+    "微信图片_20261112105732_567_26.jpg",
+    "微信图片_20261112105732_568_26.jpg",
+    "微信图片_20261112105732_569_26.jpg",
+    "微信图片_20261112105732_570_26.jpg",
+    "微信图片_20261112105732_571_26.jpg",
+    "微信图片_20261112105732_572_26.jpg"
+  ]
+}

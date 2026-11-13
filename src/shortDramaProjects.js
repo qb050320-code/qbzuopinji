@@ -689,10 +689,10 @@ export const shortDramaProjects = [
         "url": "/media/drama-test-08/grading-test.pdf"
       }
     ],
-    "description": "集中展示多部短剧的调色测试与视觉风格方案。包含《春风许我在少年》《哥哥我不治了》《网恋失败》等项目的测试资料。",
+    "description": "多部短剧的调色测试与视觉风格方案。包含《春风许我在少年》《哥哥我不治了》《网恋失败》等项目",
     "contributions": [
       "人物肤色与场景影调测试",
-      "不同剧情氛围下的色彩风格探索"
+      "两个月内完成十二部短剧的调色"
     ],
     "note": "8 份原始测试资料 · 107 页"
   }

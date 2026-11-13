@@ -10,6 +10,9 @@
   width: 100%; height: 100%; object-fit: cover; object-position: 58% 55%;
   filter: none;
 }
+.hero-studio .hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.8s ease; }
+.hero-studio .hero-slide.is-active { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .hero-studio .hero-slide { transition: none; } }
 .hero-studio .hero-shade {
   background:
     linear-gradient(90deg, rgba(10, 11, 10, .7) 0%, rgba(10, 11, 10, .42) 24%, rgba(10, 11, 10, .04) 58%, rgba(10, 11, 10, .02) 100%),
