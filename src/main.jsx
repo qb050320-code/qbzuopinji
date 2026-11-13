@@ -1,3 +1,4 @@
+import { resolveVideoSource } from './videoSources';
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { profile, projects, experiences } from './data';
@@ -137,7 +138,7 @@ function App() {
           <h2 id="dialog-title">{modal.project.title}</h2>
           <div className="dialog-tags">{[...new Set([modal.project.type, ...modal.project.categories])].join(' / ')}</div>
           <p>{modal.project.description}</p>
-          {modal.project.video && <video className="project-film" controls playsInline preload="none" poster={modal.project.image} src={modal.project.video} aria-label={`${modal.project.title}成片`} />}
+          {modal.project.video && <video className="project-film" controls playsInline preload="none" poster={modal.project.image} src={resolveVideoSource(modal.project)} aria-label={`${modal.project.title}成片`} />}
           {modal.project.filmUrl && <a className="text-link" href={modal.project.filmUrl} target="_blank" rel="noreferrer">{modal.project.filmLabel || '观看完整影片 · 哔哩哔哩'} <Arrow /></a>}
           {modal.project.pdf && <a className="text-link" href={modal.project.pdf} target="_blank" rel="noreferrer">查看 / 下载原始调色测试 PDF <Arrow /></a>}
           {modal.project.pdfs && <div className="pdf-downloads"><h3>原始调色测试资料</h3>{modal.project.pdfs.map(pdf => <a className="text-link" key={pdf.url} href={pdf.url} target="_blank" rel="noreferrer">{pdf.title} <Arrow /></a>)}</div>}
